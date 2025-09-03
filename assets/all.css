@@ -1,7 +1,19 @@
 @import "tailwindcss";
 
 @layer utilities {
-    .leading-120 {
-        line-height: 1.2;
-    }
+  .leading-120 {
+    line-height: 1.2;
+  }
+}
+/* 自訂 class */
+.leading-120 {
+  line-height: 1.2;
+}
+
+/* 中斷點 */
+@media (min-width: 640px) {
+  /* sm */
+  .sm\:leading-120 {
+    line-height: 1.2;
+  }
 }
