@@ -8,72 +8,98 @@
     <title>index</title>
   </head>
   <body>
-    <div class="max-w-[1066px] mx-auto mt-3">
-    <div class="swiper w-auto">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide flex items-center justify-center">
-          <img src="/assets/images/Rectangle 187.png" alt="" class="mb-4">
-          <div>
-           <span class="inline-block bg-[#DFF7FB] text-[#02B5D4] text-base font-medium mb-3 px-4 py-2 rounded-full dark:bg-blue-900 dark:text-blue-300">最新商品</span>
-            <p class="text-xl font-bold leading-120">首次蝴蝶酥亮相</p>
-            <time datetime="2025-07-19" class="text-sm">2025.07.19</time>
-          </div>
-        </div>
-        <div class="swiper-slide flex items-center justify-center">
-          <img src="/assets/images/Rectangle 187.png" alt="" class="mb-4">
-          <div>
-           <span class="inline-block bg-[#DFF7FB] text-[#02B5D4] text-base font-medium mb-3 px-4 py-2 rounded-full dark:bg-blue-900 dark:text-blue-300">最新商品</span>
-            <p class="text-xl font-bold leading-120">首次蝴蝶酥亮相</p>
-            <time datetime="2025-07-19" class="text-sm">2025.07.19</time>
-          </div>
-        </div>
-         <div class="swiper-slide flex items-center justify-center">
-          <img src="/assets/images/Rectangle 187.png" alt="" class="mb-4">
-          <div>
-           <span class="inline-block bg-[#DFF7FB] text-[#02B5D4] text-base font-medium mb-3 px-4 py-2 rounded-full dark:bg-blue-900 dark:text-blue-300">最新商品</span>
-            <p class="text-xl font-bold leading-120">首次蝴蝶酥亮相</p>
-            <time datetime="2025-07-19" class="text-sm">2025.07.19</time>
-          </div>
-        </div>
+    <div
+      class="pl-[20px] pr-0 max-w-full sm:max-w-[1296px] lg:mx-auto mt-10 sm:flex sm:items-start"
+    >
+      <div class="flex sm:items-start items-end mb-10 sm:mb-0">
+        <h2
+          class="[writing-mode:horizontal-tb] sm:[writing-mode:vertical-rl] sm:[text-orientation:upright] text-[#333333] font-bold text-5xl mr-3"
+        >
+          最新消息
+        </h2>
+        <p
+          class="rotate-0 sm:rotate-90 inline-block sm:origin-top text-[#02B5D4] text-[28px] font-bold sm:mt-10"
+        >
+          News
+        </p>
       </div>
+
+      <div class="max-w-full sm:max-w-[1066px] ml-auto">
+        <div class="swiper w-auto">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="/assets/images/Rectangle 187.png" alt="" class="mb-4" />
+              <div>
+                <span
+                  class="leading-120 inline-block bg-[#DFF7FB] text-[#02B5D4] text-base font-normal mb-3 px-4 py-2 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                  >最新商品</span
+                >
+                <p class="text-xl font-bold leading-120">首次蝴蝶酥亮相</p>
+                <time datetime="2025-07-19" class="text-sm">2025.07.19</time>
+              </div>
+            </div>
+
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="/assets/images/2.png" alt="" class="mb-4" />
+              <div>
+                <span
+                  class="leading-120 inline-block bg-[#DFF7FB] text-[#02B5D4] text-base font-normal mb-3 px-4 py-2 rounded-full dark:bg-blue-300 dark:text-white"
+                  >店休公告</span
+                >
+                <p class="text-xl font-bold leading-120">7/11 提早打烊公告</p>
+                <time datetime="2025-07-11" class="text-sm">2025.07.11</time>
+              </div>
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <img src="/assets/images/3.png" alt="" class="mb-4" />
+              <div>
+                <span
+                  class="leading-120 inline-block bg-[#DFF7FB] text-[#02B5D4] text-base font-normal mb-3 px-4 py-2 rounded-full dark:bg-blue-300 dark:text-white"
+                  >期間限定</span
+                >
+                <p class="text-xl font-bold leading-120">肚臍澎起來的甜燒餅</p>
+                <time datetime="2025-07-15" class="text-sm">2025.07.15 </time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- Pagination -->
-      <div class="swiper-pagination"></div>
     </div>
-</div>
     <script type="module" src="../main.js"></script>
-<script type="module">
-  import Swiper from "swiper";
-  import "swiper/css";
+    <script type="module">
+      import Swiper from "swiper";
+      import "swiper/css";
 
-  const swiper = new Swiper(".swiper", {
-    loop: true,
-    spaceBetween: 24,
-    pagination: { el: ".swiper-pagination" },
-    autoplay: { delay: 3000 },
-
-    // 預設桌面版顯示 3 張
-    slidesPerView: 3,
-
-    // 響應式設定
-    breakpoints: {
-      // 手機螢幕寬度 <= 768px
-      0: {
-        slidesPerView: 1.5, // 顯示 1.5 張
-        spaceBetween: 16,   // 手機可以縮小間距
-      },
-      // 平板 >= 768px 顯示 2 張
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // 桌面 >= 1024px 顯示 3 張
-      1024: {
-        slidesPerView: 3,
+      const swiper = new Swiper(".swiper", {
+        loop: true,
         spaceBetween: 24,
-      },
-    },
-  });
-</script>
+        pagination: { el: ".swiper-pagination" },
+        autoplay: { delay: 3000 },
+
+        // 預設桌面版顯示 3 張
+        slidesPerView: 3,
+
+        // 響應式設定
+        breakpoints: {
+          // 手機螢幕寬度 <= 768px
+          0: {
+            slidesPerView: 1.5, // 顯示 1.5 張
+            spaceBetween: 16, // 手機可以縮小間距
+          },
+          // 平板 >= 768px 顯示 2 張
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // 桌面 >= 1024px 顯示 3 張
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
