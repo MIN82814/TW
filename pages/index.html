@@ -28,8 +28,8 @@
           ></span>
         </div>
       </div>
-      <div class="max-w-full sm:max-w-[1066px] ml-auto">
-        <div class="swiper w-auto">
+      <div class="max-w-full lg:max-w-[1066px] sm:ml-auto mx-auto">
+        <div class="swiper w-full">
           <div class="swiper-wrapper">
             <div class="swiper-slide flex items-center justify-center">
               <img src="/assets/images/Rectangle 187.png" alt="" class="mb-4" />
@@ -106,15 +106,17 @@
           },
           // 平板 >= 768px 顯示 2 張
           768: {
-            slidesPerView: 2.2,
-            spaceBetween: 20,
+            slidesPerView: 2,
+            spaceBetween: 16,
           },
           // 桌面 >= 1024px 顯示 3 張
-          1024: {
+          1025: {
             slidesPerView: 3,
             spaceBetween: 24,
           },
         },
+        observer: true,
+        observeParents: true,
       });
     </script>
   </body>
