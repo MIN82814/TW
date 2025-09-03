@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .leading-120 {
+        line-height: 1.2;
+    }
+}
